@@ -1,0 +1,44 @@
+How to use graph:
+-----------------
+1. ZOOM IN: 
+	- x axis by clicking on the graph and draging the mouse to the side.
+	- y axis by pressing 'a' key and mouse draging 
+2. ZOOM OUT:
+	- double click on the mouse in the graph area
+
+-----------------------------------------
+The server's URL has to be in the query string under the 'feed' key in order to fetch data every 'N' mSec.
+The latency interval 'N' is configured in the graph.js file under updateInterval variable.
+
+-----------------------------------------
+
+The graph uses 'GET' method to connect with the server, it sends just one parameter now:
+- 'frame' is the last frame number, which was read from the server feed
+
+-----------------------------------------
+
+Examples of URLs for rendering the graph:
+
+1. LINES - load lines json file:
+knushka.com/kgraph/?feed=data/lines/multi_kv_1.json 
+
+2. BAR GRAPHS - load bars json file:
+knushka.com/kgraph/?feed=data/bars/barfeed-2.json
+knushka.com/kgraph/?feed=data/bars/barfeed-1.json
+knushka.com/kgraph/?feed=data/bars/barfeed-4.json
+knushka.com/kgraph/?feed=data/bars/bpch-old.json
+
+3. load any type graph with random update from a hard drive:
+knushka.com/kgraph/?random=true
+
+4. load Lines with random:
+knushka.com/kgraph/?feed=data/lines/multi_kv_1_old.json&random=true
+
+-----------------------------------------
+The programm supports 2 data types for reading from local file, 
+which are used for line or bar graph. 
+In addition, it supports 3 types of json formats for updates, 
+1 for line graph (with mode 'kv_1') and 2 for bars (with mode 'vector_2' and 'bpch').
+Examples of these data formats are available under "sampledata"
+-----------------------------------------
+

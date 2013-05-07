@@ -1,0 +1,130 @@
+/* 	clear: both; */
+body {
+	font-family: monospace;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* 	background-image: url('imgs/bg3.jpg'); */
+}
+
+h1 {
+	color: blue;
+}
+
+span {
+	font-size: smaller;
+}
+
+#placeholder {
+	float: left;
+	width: 98%;
+	height: 400px;
+}
+
+.marginLeft {
+	margin-left: 28px;
+}
+
+#isBar {
+	margin-top: 1%;
+}
+
+.isbarspan {
+	margin-left: 3px;
+}
+
+#legendContainer {
+	float: right;
+}
+
+#topbar {
+	width: 94%;
+	margin-left: 30px;
+	display: inline-block;
+	overflow: auto;
+}
+
+#choices { /* 	margin-left: 10px; */
+	overflow: auto;
+	float: none;
+	border: 2px solid #E0E0E0;
+	margin: 2px;
+	background-color: #FBFFFA;
+	width: 94%;
+	margin-left: 33px;
+	/* 	background-image: url('imgs/bg1.jpg'); */
+}
+
+#overviewBarsTotal {
+	font-weight: bold;
+	margin-left: 33px;
+}
+
+#choices label {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+#choices div input {
+	margin: 2px;
+}
+
+#choices div {
+	margin: 2px;
+}
+
+.cell {
+	border: 1px outset #D3D9F8;
+	padding: 1px;
+	display: inline-table;
+	text-align: center;
+	cursor: pointer;
+	/* 	background-color: #E8F1F7; */
+	background-color: #E3F0F8;
+}
+
+.cell_content {
+	width: 4px;
+	height: 0;
+	border: 5px solid rgb(36, 230, 78);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#miniature {
+	float: right;
+	margin-right: 20px;
+}
+
+#placeholder .button {
+	position: absolute;
+	cursor: pointer;
+}
+
+.message {
+	padding-left: 50px;
+	font-size: smaller;
+}
+
+#fileName {
+	margin-left: -160px;
+	width: 200px;
+	border-width: 0px;
+	background-color: white;
+	text-align: left;
+	font-family: monospace;
+}
+
+#onOffButton {
+	background: url("../css/imgs/buttons.jpg") no-repeat;
+	/* 	border: 1px dotted rgb(14, 13, 14); */
+	margin-right: 6px;
+	background-position: 1px 2px !important;
+	background-size: 20px;
+	width: 21px;
+	height: 24px;
+}
+
+#files {
+	margin-left: 10px;
+}

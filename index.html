@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>KGraph</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<!--[if lte IE 8]>
+<script language="javascript" type="text/javascript" src="js/lib/excanvas.min.js"></script>
+<![endif]-->
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery.flot.js"></script>
+<script src="js/lib/jquery.flot.selection.js"></script>
+
+
+
+</head>
+
+<body>
+	<input type="button" id="startDynamicUpdate" style="display: none;"></input>
+	<div id="topbar" style="display: -webkit-box;">
+
+		<!-- 			<input type="button" value="Fetch Json Data" id="fetchJsonData">  -->
+		<div id="onOffButton"></div>
+		<input type="button" value="Start Update" id="startUpdate"></input> <span
+			id="overviewTotal"></span> <input type="file" id="files" name="file"></input>
+		<input type="button" readonly="readonly" id="fileName"></input>
+
+	</div>
+	<div id="choices"></div>
+	<span id="overviewBarsTotal"><br/></span>
+	<div id="placeholder"></div>
+	<div>&nbsp;</div>
+
+	<script src="js/graph.js"></script>
+	<script src="js/global.js"></script>
+
+	<script src="js/barLabels.js"></script>
+	<script src="js/ajaxUpdate.js"></script>
+	<script src="js/updateLines_kv_1.js"></script>
+	<script src="js/updateBars_vector_2.js"></script>
+	<script src="js/updateBars_bpch.js"></script>
+
+	<!-- 	<script src=></script> -->
+
+	<script src="js/renderWindowProps.js"></script>
+	<script src="js/drawGraph.js"></script>
+
+	<script src="js/colors.js"></script>
+	<script src="js/graphProps.js"></script>
+
+	<script src="js/sparcingData.js"></script>
+
+	<script src="js/readFile.js"></script>
+
+</body>
+</html>
+
